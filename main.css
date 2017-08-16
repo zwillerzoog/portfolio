@@ -4,15 +4,23 @@
     
 }
 body {
-    background-image: url('olia-gozha-53327.jpg');
-    background-size:1450px;
+    background: url('running-horse.gif') no-repeat bottom;
+    background-size:cover;
     background-attachment: fixed;
     background-position-x: center;
     background-repeat:no-repeat;
     background-color: #f4f5f9;
     height: 500px;
+    color: #505260;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
+i:hover {
+    font-weight: bolder;
+}
 
 h1 {
     /* position: fixed; */
@@ -36,18 +44,18 @@ h1 {
     padding: 10px;
 }
 
-.fa-chevron-right {
+
+i {
     position: fixed;
     bottom: 50%;
+    color: rgb(177, 181, 188);
+}
+.fa-chevron-right {
     left: 93%;
-    color: #818495;
 }
 
 .fa-chevron-left {
-    position: fixed;
-    bottom: 50%;
     right: 93%;
-    color: #818495;
 }
 
 a {
@@ -57,8 +65,10 @@ a {
 
 .headshot {
     display: block;
-    margin: auto;
-    padding: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    padding-bottom: 20px
 }
 
 .about {
@@ -69,23 +79,93 @@ a {
 }
 
 .contact-links {
-    width: 400px;
+    max-width: 400px;
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5%;
     list-style-type: none;
     text-decoration: none;
     display: flex;
-    padding: 50px;
+    /* padding: 50px; */
     justify-content: space-between;
 }
 
 #work {
-    background-color: green;
-    position: relative;
-    left: 1800px;
+    /* background-color: green; */
+    /* position: relative; */
+    /* left: 1800px; */
 }
 
-/* .contact {
-    position: relative;
-    left: 1800px;
-    margin-bottom: 50px;
-} */ */
+.work-header {
+    /* background-color: green; */
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 20px;
+}
+
+.project {
+    background-color: rgb(234, 237, 243);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.project-description {
+    padding: 5px;
+}
+
+.project-stack, .project-links {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+#contact {
+    /* display: block; */
+    margin-top: 10%;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    /* position: fixed; */
+    margin: auto;
+    background-color: rgb(234, 237, 243);
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    /* display: flex; */
+    /* margin: auto; */
+    max-width: 300px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    padding: 10px;
+}
+
+input, textarea {
+    width: 290px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 300px;
+    display: block;
+    background-color: rgb(234, 237, 243);
+    border: none;
+    border-radius: 5px;
+}
