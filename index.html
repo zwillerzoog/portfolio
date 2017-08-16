@@ -3,34 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>J. Random Hacker</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Heidi Marsh | Web Design</title>
     </head>
     <body>
-        <header>
-            <h1>J. Random Hacker</h1>
+        <header id="header">
+            <h1>Heidi Marsh</h1>
             <nav class="main-nav">
-                <ul>
-                    <li class="main-nav-link"><a href="#about">About me</a></li>
-                    <li class="main-nav-link"><a href="#work">My work</a></li>
-                    <li class="main-nav-link"><a href="#contact">Contact me</a></li>
+                <ul class="nav-list">
+                    <li class="main-nav-link about-button"><a href="#about">About me</a></li>
+                    <li class="main-nav-link work"><a href="#work">My work</a></li>
+                    <li class="main-nav-link contact"><a href="#contact">Contact me</a></li>
                 </ul>
+                <a href="#about"><i class="fa fa-chevron-right about-button" style="font-size:36px"></i></a>
             </nav>
+        </header>
 
+            <div class="about-page" hidden>
+            
             <img class="headshot" src="http://unsplash.it/150/150"
                 alt="J. Random Hacker headshot">
-
             <p class="about" id="about">
-                Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
+                Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  
+                I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  
+                Outside of coding I enjoy watching 
+                <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
             </p>
             <nav class="contact-links">
-                <ul>
+                <ul class="contact-links">
                     <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
                     <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
                     <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
                 </ul>
             </nav>
-        </header>
-        <section class="work" id="work">
+            <a href="#header"><i class="fa fa-chevron-left header-button" style="font-size:36px"></i></a>
+            <a href="#work"><i class="fa fa-chevron-right work-button" style="font-size:36px"></i></a>
+        </div>
+        
+        <section id="work" hidden>
             <h2>My work</h2>
             <section class="project">
                 <h3>Frobnicator</h3>
@@ -149,7 +160,7 @@
                 </nav>
             </section>
         </section>
-        <section class="contact" id="contact">
+        <section id="contact" hidden>
             <h2>Contact me</h2>
             <form action="https://formspree.io/jrandomhacker@example.com"
                   method="POST">
@@ -162,5 +173,10 @@
                 <input type="submit" value="Send message">
             </form> 
         </section>
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

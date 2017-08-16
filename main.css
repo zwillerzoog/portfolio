@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-image: url('olia-gozha-53327.jpg');
+    background-size:1450px;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat:no-repeat;
+    background-color: #f4f5f9;
+    height: 500px;
+}
+
+
+h1 {
+    /* position: fixed; */
+    width: 100%;
+    margin-top: 18%;
+    text-align: center;
+    font-size: 70px;
+    color: #505260;
+}
+
+
+.nav-list {
+    font-size: 25px;
+    /* background-color: red; */
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+.fa-chevron-right {
+    position: fixed;
+    bottom: 50%;
+    left: 93%;
+    color: #818495;
+}
+
+.fa-chevron-left {
+    position: fixed;
+    bottom: 50%;
+    right: 93%;
+    color: #818495;
+}
+
+a {
+    color: #636573;
+    text-decoration:  none;
+}
+
+.headshot {
+    display: block;
+    margin: auto;
+    padding: 90px;
+}
+
+.about {
+    width: 50%;
+    /* position: absolute;  */
+    margin: auto;
+    text-align: center;
+}
+
+.contact-links {
+    width: 400px;
+    margin: auto;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+#work {
+    background-color: green;
+    position: relative;
+    left: 1800px;
+}
+
+/* .contact {
+    position: relative;
+    left: 1800px;
+    margin-bottom: 50px;
+} */ */
