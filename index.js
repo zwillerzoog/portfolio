@@ -18,6 +18,7 @@ $('.work-button').on('click', () => {
   $('#work').removeAttr('hidden');
   $('.about-page').attr('hidden', true);
   $('#contact').attr('hidden', true);
+  $('header').attr('hidden', true);
 });
 
 $('.contact-button').on('click', () => {
