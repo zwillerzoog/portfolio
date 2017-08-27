@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('running-horse.gif') no-repeat bottom;
+    background: url('running-horse-once.gif') no-repeat bottom;
     background-size:cover;
     background-attachment: fixed;
     background-position-x: center;
@@ -90,8 +90,10 @@ a {
     margin-right: auto;
     margin-top: 10%;
     margin-bottom: 20px;
-    /* padding-bottom: 20px; */
-    border-radius: 80px;
+    /* padding-bottom: 15px; */
+    border-radius: 10000px;
+    /* max-width: 200px; */
+    max-height: 100px;
 }
 
 .about {

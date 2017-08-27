@@ -5,13 +5,14 @@ $('.about-button').on('click', () => {
   $('.about-page').removeAttr('hidden');
   $('header').attr('hidden', true);
   $('#work').attr('hidden', true);
-  $('');
+  $('body').css('background-image', 'url(running-horse-once.gif)');
 });
 
 $('.header-button').on('click', () => {
   $('header').removeAttr('hidden');
   $('.about-page').attr('hidden', true);
   $('#contact').attr('hidden', true);
+  $('body').css('background-image', 'url(running-horse-once.gif)');
 });
 
 $('.work-button').on('click', () => {
@@ -19,6 +20,7 @@ $('.work-button').on('click', () => {
   $('.about-page').attr('hidden', true);
   $('#contact').attr('hidden', true);
   $('header').attr('hidden', true);
+  $('body').css('background-image', 'url(running-horse-once.gif)');
 });
 
 $('.contact-button').on('click', () => {
@@ -26,6 +28,7 @@ $('.contact-button').on('click', () => {
   $('header').attr('hidden', true);
   $('.about-page').attr('hidden', true);
   $('#work').attr('hidden', true);
+  $('body').css('background-image', 'url(running-horse-once.gif)');
 });
 // function endpointSend() {
 //     const endpoint = location.hash;
