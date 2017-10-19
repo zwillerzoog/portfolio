@@ -1,0 +1,63 @@
+
+.about{
+    position: absolute;
+    left: 25%; 
+}
+
+.headshot {
+    margin: auto;
+    margin-top: 175px;
+    display: block;
+    border-radius: 10000px;
+    max-height: 100px;
+}
+
+.about {
+    width: 50%;
+    top: 45%;
+    left: 25%; 
+    text-align: center;
+}
+
+.icon {
+    width: 30px; /* you can use % */
+    height: auto;
+}
+
+nav.contact {
+    position: relative;
+    top: 100px;
+}
+
+.contact-links {
+    /* position:relative; */
+    display: flex;
+    /* top: 150px; */
+    left: 0;
+    margin-top: 5px;
+    min-width: 200px;
+    
+}
+
+.hidden-descriptors {
+    background-color: lightblue;
+    max-width: 400px;
+    position: relative;
+    /* display: flex; */
+    top: 20px;
+    left:23%;
+
+    /* text-align: center; */
+}
+
+.email-words {
+    margin-left: 10%;
+}
+
+.linkedin-words {
+    margin-left: 19px;
+}
+
+.github-words {
+    left: 54%;
+}
