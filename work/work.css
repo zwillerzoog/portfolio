@@ -35,19 +35,23 @@ div.tabs {
 }
 
 button.tab {
-    
     background-color: inherit;
     font-size: 14px;
     color: #505260;
-    /* padding-left: 20px; */
-    /* float: center; */
     border: none;
     outline: none;
-
-    /* cursor: pointer; */
+    cursor: pointer;
     padding: 15px 15px;
     transition: 0.3s;
 }
+
+ button.tab.feedback, button.tab.savage {
+    width: 300px;
+}
+
+button.tab.rex {
+    width: 150px;
+} 
 
 div.tabs button:hover {
     background-color: #ddd;
@@ -59,7 +63,8 @@ div.tab button.active {
 
 .project {
     padding-top: 50px;
-    /* margin-top: 20px; */
+    width: 375px;
+    margin: auto
 }
 
 h3 {
@@ -73,16 +78,33 @@ h3 {
 .project-stack {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    left: 28%
+    justify-content: center;
+    margin: auto;
 }
 
-.tech-icon {
-    height: 45px;
-    width: auto;
-}
-
-.project-stack, .project-links {
-    list-style-type: none;
+.project-stack-item {
+    padding: 0px 10px;
     padding-bottom: 10px;
+    color: #9DA0A7;
+
+}
+
+.project-buttons {
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.project-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .nav-description {
+        display: none;
+    }
 }

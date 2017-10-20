@@ -1,3 +1,5 @@
+if ($(window).width() > 720) {
+console.log('big')
 //Show Contact Descriptions
 $('.contact-link-email').mouseover(() => {
     $('.email-words').removeAttr('hidden')
@@ -19,3 +21,4 @@ $('.contact-link-email').mouseover(() => {
   $('.contact-link-github').mouseout(() => {
     $('.github-words').attr('hidden', true)
   })
+}

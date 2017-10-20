@@ -24,40 +24,57 @@
     height: auto;
 }
 
-nav.contact {
-    position: relative;
-    top: 100px;
-}
 
-.contact-links {
-    /* position:relative; */
-    display: flex;
-    /* top: 150px; */
-    left: 0;
-    margin-top: 5px;
-    min-width: 200px;
+
+
+
+@media (min-width: 720px) {
+    nav.contact {
+        position: relative;
+        top: 100px;
+    }
+
+    .contact-links, .hidden-descriptors {
+        display: flex;
+        /* margin-top: 5px; */
+        width: 450px;
+        margin: auto;
+    }
     
+    .email-words {
+        margin-left: 8%
+    }
+    
+    .linkedin-words {
+        margin-left: 27%;
+    }
+    
+    .github-words {
+        margin-left: 60%;
+    }
 }
 
-.hidden-descriptors {
-    background-color: lightblue;
-    max-width: 400px;
-    position: relative;
-    /* display: flex; */
-    top: 20px;
-    left:23%;
+@media (max-width: 720px) {
+    nav.contact {
+        position: relative;
+        top: 150px;
+    }
+    .contact-links, .hidden-descriptors {
+        display: flex;
+        bottom: 0;
+        width: 300px;
+        margin: auto;
+    }
 
-    /* text-align: center; */
-}
-
-.email-words {
-    margin-left: 10%;
-}
-
-.linkedin-words {
-    margin-left: 19px;
-}
-
-.github-words {
-    left: 54%;
+    .email-words {
+        margin-left: 8%
+    }
+    
+    .linkedin-words {
+        margin-left: 23%;
+    }
+    
+    .github-words {
+        margin-left: 55%;
+    }
 }

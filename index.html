@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css">
+
     <link rel="stylesheet" href="work/work.css">
+    <link rel="stylesheet" href="about/about.css">
+    <link rel="stylesheet" href="main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -15,103 +17,108 @@
 </head>
 
 <body>
-    <p id="watermark">Heidi Marsh</p>
+    <!-- <p id="watermark">Heidi Marsh</p> -->
     <header id="#">
         <h1>HEIDI MARSH</h1>
         <h2>Web Developer</h2>
         <nav class="main-nav">
-                    <a class="left-link about-button" href="about/about.html">
+                    <a class="left-link about-button" href="#about">
                         <i class="fa fa-chevron-left" style="font-size:50px"></i>
                         <p class='nav-description arrow-word-left'>About me</p>
                     </a>
-                    <a class="right-link" href="#work">
+                    <a class="right-link work-button" href="#work">
                         <i class="fa fa-chevron-right" style="font-size:50px"></i>
                         <p class='nav-description arrow-word-right'>My work</p>
                     </a>
-        </nav>
-        
+        </nav>  
     </header>
 
-    
-
     <section id="work" hidden>
-            <div class="arrow-button">
-                <div class="right header">
-                    <a href="#header"><i class="fa fa-chevron-left header-button" style="font-size:36px"></i></a>
-                </div>
-                <div class="left about">
-                    <a href="#about"><i class="fa fa-chevron-right about-button" style="font-size:36px"></i></a>
-                </div>
-            </div>
+        <nav class="work-nav">
+            <a class="left-link header-button" href="/">
+                <i class="fa fa-chevron-left" style="font-size:50px"></i>
+                <p class='nav-description arrow-word-left'>Back to main</p>
+            </a>
+            <a class="right-link about-button" href="#about">
+                <i class="fa fa-chevron-right" style="font-size:50px"></i>
+                <p class='nav-description arrow-word-right'>About me</p>
+            </a>
+</nav>
             <div class="tabs">
                 <button class="tab savage">Savage Ghosting</button>
                 <button class="tab rex">My Rex</button>
-                <button class="tab loch">Loch Ness Learner</button>
                 <button class="tab feedback">Feedback Framework</button>
             </div>
         <section class="project savage-ghosting">
             
             <h3>Savage Ghosting</h3>
-            <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
+            <img class="project-image" src="assets/savage_screenshot.png" alt="Screenshot of Game Menu Screen">
             <p class="project-description">
                 A multiplayer top-down shooter built with Phaser.io.
             </p>
-
-            <nav>
-                <ul class="project-links">
-                    <li class="project-link project-link-live">
-                        <a href="https://savage-ghosting.herokuapp.com/">Live demo</a>
-                    </li>
-                    <li class="project-link project-link-github">
-                        <a href="https://github.com/zwillerzoog/boat-phaser-game">Source code</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="project-buttons">
+                <button class="project-button project-link-live">
+                    <a href="https://savage-ghosting.herokuapp.com/" target="_blank">Live demo</a>
+                </button>
+                <button class="project-button project-link-github">
+                    <a href="https://github.com/zwillerzoog/boat-phaser-game" target="_blank">Source code</a>
+                </button>
+        </nav>
             <div class="project-stack">
                     <p class="project-stack-item">
-                        <img src="assets/phaser_icon.png" class="tech-icon">
+                        Phaser.io
                     </p>
                     <p class="project-stack-item">
-                        <img src="assets/socket_icon.png" class="tech-icon">
+                        Socket.io
                     </p>
                     <p class="project-stack-item">
-                       <img src="assets/javascript_icon.png" class="tech-icon">
+                       Javascript
                     </p>
                     <p class="project-stack-item">
-                        <img src="assets/nodejs_icon.png" class="tech-icon">
+                        Node.js
                     </p>
                 </div>
         </section>
 
         <section class="project My-Rex" hidden>
             <h3>My Rex</h3>
-            <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="FooBar screenshot">
+            <img class="project-image" src="assets/rex_screenshot.png" alt="Screenshot of Authentication Page">
             <p class="project-description">
                 A recommendation engine to uncover your newest obsession.
             </p>
-            <ul class="project-stack">
-                <li class="project-stack-item">
-                    React
-                </li>
-                <li class="project-stack-item">
-                    Redux
-                </li>
-                <li class="project-stack-item">
-                    Node.js
-                </li>
-            </ul>
-            <nav>
-                <ul class="project-links">
-                    <li class="project-link project-link-live">
-                        <a href="https://myrex.herokuapp.com/">Live demo</a>
-                    </li>
-                    <li class="project-link project-link-github">
-                        <a href="#">Source code</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="project-buttons">
+                <button class="project-button project-link-live">
+                    <a href="https://myrex.herokuapp.com/" target="_blank">Live demo</a>
+                </button>
+                <button class="project-button project-link-github">
+                    <a href="https://github.com/zwillerzoog/my-rex" target="_blank">Source code</a>
+                </button>
+        </nav>
+        <div class="project-stack">
+            <p class="project-stack-item">
+                Javascript
+            </p>
+            <p class="project-stack-item">
+                jQuery
+            </p>
+            <p class="project-stack-item">
+                Node.js
+            </p>
+            <p class="project-stack-item">
+               MongoDB
+            </p>
+            <p class="project-stack-item">
+                Passport.js
+            </p>
+            <p class="project-stack-item">
+                Mocha
+            </p>
+            <p class="project-stack-item">
+                Chai
+            </p>
+        </div>
         </section>
-
+<!-- 
         <section class="project Loch-Ness-Learner" hidden>
             <h3>Loch Ness Learner</h3>
             <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="AliceBob screenshot">
@@ -139,36 +146,85 @@
                     </li>
                 </ul>
             </nav>
-        </section>
+        </section> -->
         <section class="project Feedback-Framework" hidden>
             <h3>Feedback Framework</h3>
-            <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Wibble screenshot">
+            <img class="project-image" src="assets/feedback_screenshot.png" alt="Feedback Framework screenshot">
             <p class="project-description">
                 An anonymous comment board to foster honest communication.
             </p>
-            <ul class="project-stack">
-                <li class="project-stack-item">
-                    React
-                </li>
-                <li class="project-stack-item">
-                    Redux
-                </li>
-                <li class="project-stack-item">
-                    Node.js
-                </li>
-            </ul>
-            <nav>
-                <ul class="project-links">
-                    <li class="project-link project-link-live">
-                        <a href="https://capstone-aug10.herokuapp.com/">Live demo</a>
-                    </li>
-                    <li class="project-link project-link-github">
-                        <a href="#">Source code</a>
-                    </li>
-                </ul>
+            <nav class="project-buttons">
+                <button class="project-button project-link-live">
+                    <a href="https://capstone-aug10.herokuapp.com/" target="_blank">Live demo</a>
+                </button>
+                <button class="project-button project-link-github">
+                    <a href="https://github.com/zwillerzoog/Fullstack-Capstone" target="_blank">Source code</a>
+                </button>
             </nav>
+            <div class="project-stack">
+                <p class="project-stack-item">
+                    React
+                </p>
+                <p class="project-stack-item">
+                    Redux
+                </p>
+                <p class="project-stack-item">
+                   Node.js
+                </p>
+                <p class="project-stack-item">
+                    Thunk
+                </p>
+                <p class="project-stack-item">
+                    Stellar.js
+                </p>
+            </div>
+
         </section>
     </section>
+    
+    <div class="about-page" id="about" hidden>
+        <nav class="about-nav">
+                    <a class="left-link work-button" href="#work">
+                        <i class="fa fa-chevron-left" style="font-size:50px"></i>
+                        <p class='nav-description arrow-word-left'>My work</p>
+                    </a>
+                    <a class="right-link header-button" href="/">
+                        <i class="fa fa-chevron-right" style="font-size:50px"></i>
+                        <p class='nav-description arrow-word-right'>Back to main</p>
+                    </a>
+        </nav>
+        <img class="headshot" src="../assets/headshot_pic.jpeg" alt="Heidi headshot">
+    <p class="about" id="about">
+        I'm Heidi, a full-stack web developer based in Washington DC. 
+        <!-- P.S. Do you find this site a little too dry? (no pun intended) Check out my interactive portfolio! -->
+    </p>
+    <nav class="contact">
+        <container class="contact-links">
+            <p class="contact-link contact-link-email">
+                <a href="mailto:marsh.heidi.c@gmail.com">
+                    <img class="icon email" src="../assets/icons8-Email.png" alt="email icon">
+                </a>
+            </p>
+            <p class="contact-link contact-link-linkedin">
+                <a href="https://www.linkedin.com/in/heidi-marsh-6054562a/">
+                    <img class="icon linkedin" src="../assets/icons8-LinkedIn.png" alt="Heidi headshot">
+                </a>
+            </p>
+            <p class="contact-link contact-link-github">
+                <a href="https://www.github.com/zwillerzoog"> 
+                    <img class="icon github" src="../assets/icons8-GitHub.png" alt="Heidi headshot">
+                </a>
+            </p>
+        </container>
+        <container class="hidden-descriptors">
+            <p class="contact-description email-words" hidden>Email Me!</p>
+            <p class="contact-description linkedin-words" hidden>Connect with me on linkedIn</p>
+            <p class="contact-description github-words" hidden>See my work on Github!</p>
+
+        </container>
+    </nav>
+    
+</div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
